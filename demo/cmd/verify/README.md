@@ -1,6 +1,6 @@
 # Demo
 
-This demo shows how to derive a deposit addresses from an address' deposit metadata and the base deposit public key. 
+This demo shows how to derive then verify deposit addresses from an address' deposit metadata and the base deposit public key. 
 
 ## Derive the deposit address
 
@@ -17,13 +17,13 @@ Set the following values in your `config.yaml`
 | demo.public-key | The public key of Lombard's base deposit key on Cubist.  | `0x...`     |
 
 
-### 2. Derive the address
+### 2. Derive and verify the address
 ```bash
-go run demo/cmd/derive/main.go
+go run demo/cmd/verify/main.go
 ```
 
 
-If the derivation is successful, the outpu will look like
+If the verification is successful, the output will look like
 ```shell
 Address: bc1q29nrqh3cj5q5r0n7yjea6hezkrxhf6nyfv3afz
 Addresses match
